@@ -1,0 +1,17 @@
+{
+  "name": "dayflow-root",
+  "version": "1.0.0",
+  "description": "Dayflow - AI-Powered Workforce Intelligence Platform",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm install && npm run install:backend && npm run install:frontend",
+    "server": "cd backend && npm start",
+    "server:dev": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "npx concurrently \"npm run server:dev\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
